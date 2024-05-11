@@ -3,7 +3,7 @@
  ************************************************************************************/
 using System.ComponentModel;
 
-using RadioGroupBox;
+//using RadioGroupBox;
 
 namespace DpWinForms;
 
@@ -85,8 +85,12 @@ public class DpRadioGroupBox : GroupBox, INotifyPropertyChanged
 				//*** .. and creates a user event, if specified
 				SelectedTagChanged?.Invoke (this, new SelectedTagEventArgs (SelectedTag));
 			}
-			else { throw new InvalidDataException 
-				($"RadioButton {radioButton.Name} does not have a valid Tag property set"); }
+			else { 
+				if (radioButton.Created) { throw new InvalidDataException
+							($"RadioButton {radioButton.Name} " +
+											$"does not have a valid Tag property set"); 
+				}
+			}
 		}
 	}
 

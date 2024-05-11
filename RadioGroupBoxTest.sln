@@ -5,7 +5,7 @@ VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RadioGroupBoxTest", "RadioGroupBoxTest\RadioGroupBoxTest.csproj", "{6D3DCE74-BFF2-4BEA-81E8-B8CF1C19D145}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DpRadioGroupBox", "RadioGroupBox\DpRadioGroupBox.csproj", "{F5866A48-F5AA-45BF-AA91-89FAADBADC3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DpRadioGroupBoxComponent", "RadioGroupBox\DpRadioGroupBoxComponent.csproj", "{F5866A48-F5AA-45BF-AA91-89FAADBADC3C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

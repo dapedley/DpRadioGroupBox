@@ -29,7 +29,10 @@ public partial class Form1 : Form
 		tbNewSelection.Text = $"{ctrl.Name}: Selection Changed to '{ctrl.SelectedTag}'";
 	}
 
+	private void OnForm1Load (object sender, EventArgs e)
+	{
 
+	}
 }
 
 

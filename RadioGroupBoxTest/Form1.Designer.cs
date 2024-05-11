@@ -223,6 +223,7 @@ partial class Form1
 		Controls.Add (ExitBtn);
 		Name = "Form1";
 		Text = "Test Form";
+		Load += OnForm1Load;
 		radioGroupBox1.ResumeLayout (false);
 		radioGroupBox1.PerformLayout ();
 		((System.ComponentModel.ISupportInitialize) testRecBindingSource).EndInit ();

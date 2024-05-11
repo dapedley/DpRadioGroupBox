@@ -20,8 +20,18 @@ The namespace is **DpWinForms**.
 1. Ensure that the package is loaded into th Form project.
 1. Drag a copy of the `DpRadioGroupBox` on to the form's design surface and set the control's `Text` property as required.
 2. Drag as many `RadioButtons` as required on to the surface of the group box.
-1. For each `RadioButton`, set the `Tag` property of the button to a unique integer value and the `Text` property as appropriate.
+1. For each `RadioButton`, set the `Tag` property of the button to a unique integer value* and the `Text` property as appropriate.
 1. Optionally, bind the `SelectedTag` property of the `DpRadioBox` to an integer property of the `BindingSource`.
+
+*OR Set the tag in the form's Load event eg:
+```
+private void OnForm1Load (object sender, EventArgs e)
+{
+	radioButton1.Tag = "1";
+	radioButton2.Tag = "2";
+	radioButton1.Checked = true;
+}
+```
 
 ## Constructor
 
@@ -59,3 +69,5 @@ The parent control may subscribe to this event (on the `DpRadioGroupBox`), which
 	{ int newlySelectedButtonTag = e.SelectedTag; 	... }
 
 `SelectedTagEventArgs` contains a single member `int SelectedTag`, which is the `Tag` value of the selected `RadioButton`.
+
+Note that the event does not fire until the control has been created. Thus, it will not fire when `Checked` is set to `true` in the designer and the control then initialises. If required at initialisation, either set `Checked` to `true` or set the `SelectedTag` property in the form's `Load` event.
