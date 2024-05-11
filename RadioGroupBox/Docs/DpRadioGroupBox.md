@@ -1,4 +1,4 @@
-﻿# DpRadioGroupBox.md
+﻿# DpRadioGroupBox
 
 ## Overview
 
@@ -12,7 +12,8 @@ A utility method `CheckIntegrity` is provided to check that all `RadioButtons` i
 
 ### Package and Namespace
 
-The package name is DpWinControls
+The package name is **DpRadioGroupBox**
+
 The namespace is **DpWinForms**.
 
 ### Using the Control
