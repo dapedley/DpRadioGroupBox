@@ -2,25 +2,27 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0-windows8.0</TargetFramework>
-    <Nullable>disable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Title>WinForms Group Box for Radio Buttons</Title>
-    <Authors>dapedley</Authors>
+    <Nullable>disable</Nullable>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>WinForms Group Box for Radio Buttons</Title>
+    <Authors>D A Pedley</Authors>
+    <Copyright>Copyright (c) 2023 D A Pedley</Copyright>
     <PackageReadmeFile>DpRadioGroupBox.md</PackageReadmeFile>
     <PackageTags>WinForms;Controls</PackageTags>
     <PackageReleaseNotes>Package Consolidation</PackageReleaseNotes>
     <IncludeSymbols>True</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Copyright>Copyright (c) 2023 D A Pedley</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <AssemblyVersion>1.0.1</AssemblyVersion>
     <FileVersion>1.0.1</FileVersion>
     <Version>1.1.1</Version>
     <PackageId>DpRadioGroupBox</PackageId>
     <Product>DpRadioGroupBox</Product>
-  </PropertyGroup>
+		<Description>A GroupBox into which RadioButtons can be added. The developer sets the 'Tag' property of the rbs to a unique integer number. Property SelectedTag of the GroupBox then gets or sets the integer value of the checked RadioButton.</Description>
+	</PropertyGroup>
 
   <ItemGroup>
     <Compile Update="Properties\Settings.Designer.cs">
